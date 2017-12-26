@@ -8,7 +8,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Roboto mono", sans-serif;
+    font-family: "Roboto mono", monospace;
     height: 100vh;
     @include def-text-color($maybe-black);
 }
@@ -24,7 +24,7 @@ body {
     .titles {
         float: left;
     }
-    
+
     .menus {
         float: right;
     }  
