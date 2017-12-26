@@ -1,0 +1,43 @@
+@import "compass";
+@import "partials/_varibles.scss";
+@import "partials/_normalize.scss";
+@import "partials/_mixins.scss";
+@import "partials/_base.scss";
+@include font-face("Roboto Mono","../fonts/roboto_mono");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto mono", sans-serif;
+    height: 100vh;
+    @include def-text-color($maybe-black);
+}
+
+.nav {
+    display: block;
+    background: $white;
+    padding: 5px 15px 5px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    @extend .valign-wrapper;
+
+    .titles {
+        float: left;
+    }
+    
+    .menus {
+        float: right;
+    }  
+}
+
+.nav-title {
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-flex;
+    @include def-text-color($maybe-black);
+    @extend .valign-center;
+
+    .title {
+        padding-left: 15px;
+    }    
+}

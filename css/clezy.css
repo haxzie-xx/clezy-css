@@ -1,0 +1,42 @@
+/* Clezy CSS by Haxzie */
+@font-face {
+    font-family: "Roboto mono";
+    src:    url(fonts/roboto_mono.ttf)
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto mono", sans-serif;
+    height: 100vh;
+}
+
+.nav {
+    display: block;
+    background: #ffffff;
+    padding: 5px 15px 5px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    clear: both;
+    overflow: auto;
+}
+
+.nav .titles {
+    float: left;
+}
+
+.nav .menus {
+    float: right;
+}
+
+.nav-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e1e1e;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.nav-title .title {
+    padding-left: 15px;
+}
