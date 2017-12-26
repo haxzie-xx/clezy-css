@@ -3,12 +3,12 @@
 @import "partials/_normalize.scss";
 @import "partials/_mixins.scss";
 @import "partials/_base.scss";
-@include font-face("Roboto Mono","../fonts/roboto_mono");
+@import "../fonts/stylesheet.css";
 
 body {
     margin: 0;
     padding: 0;
-    font-family: "Roboto mono", monospace;
+    font-family: "roboto_monoregular", Arial, Helvetica, sans-serif;
     height: 100vh;
     @include def-text-color($maybe-black);
 }
